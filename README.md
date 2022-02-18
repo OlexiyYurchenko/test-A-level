@@ -1,4 +1,5 @@
-```sql
+```
+sql
 SELECT 
     CONCAT('This is ', name, (CASE WHEN gender='m' THEN ', he' ELSE ', she' END), ' has email ', email) AS 'info' 
 FROM 
