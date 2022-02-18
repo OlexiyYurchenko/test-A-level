@@ -1,5 +1,5 @@
 ```sql
-select concat('This is ', name, (case when gender='m' then ', he' else ', she' end), ' has email ', email) as 'info' from modul;
+SELECT concat('This is ', name, (CASE HEN gender='m' THEN ', he' ELSE ', she' END), ' has email ', email) AS 'info' FROM modul;
 ```
 ```sql
 +------------------------------------------------+
@@ -15,7 +15,7 @@ select concat('This is ', name, (case when gender='m' then ', he' else ', she' e
 +------------------------------------------------+
 ```
 ```sql
-select concat('We have ', count(*), (case when gender='m' then ' boys!' else ' girls!' end)) as 'Gender information' from modul group by gender;
+SELECT concat('We have ', count(*), (CASE WHEN gender='m' THEN ' boys!' ELSE ' girls!' END)) AS 'Gender information' FROM modul GROUP BY gender;
 ```
 ```sql
 +--------------------+
