@@ -1,9 +1,9 @@
 ```sql
 SELECT 
-        CONCAT('This is ', name, (CASE WHEN gender='m' THEN ', he' ELSE ', she' END), ' has email ', email) AS 'info' 
-FROM modul;
-```
-```sql
+    CONCAT('This is ', name, (CASE WHEN gender='m' THEN ', he' ELSE ', she' END), ' has email ', email) AS 'info' 
+FROM 
+    modul;
+
 +------------------------------------------------+
 | info                                           |
 +------------------------------------------------+
@@ -16,10 +16,15 @@ FROM modul;
 | This is Lera, she has email tpiffcks@gmail.com |
 +------------------------------------------------+
 ```
+
 ```sql
-SELECT CONCAT('We have ', count(*), (CASE WHEN gender='m' THEN ' boys!' ELSE ' girls!' END)) AS 'Gender information' FROM modul GROUP BY gender;
-```
-```sql
+SELECT 
+    CONCAT('We have ', count(*), (CASE WHEN gender='m' THEN ' boys!' ELSE ' girls!' END)) AS 'Gender information' 
+FROM 
+    modul 
+GROUP BY 
+    gender;
+
 +--------------------+
 | Gender information |
 +--------------------+
