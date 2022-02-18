@@ -1,5 +1,5 @@
 ```sql
-SELECT concat('This is ', name, (CASE HEN gender='m' THEN ', he' ELSE ', she' END), ' has email ', email) AS 'info' FROM modul;
+SELECT concat('This is ', name, (CASE WHEN gender='m' THEN ', he' ELSE ', she' END), ' has email ', email) AS 'info' FROM modul;
 ```
 ```sql
 +------------------------------------------------+
